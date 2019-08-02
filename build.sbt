@@ -14,7 +14,6 @@ val sharedSettings = Seq(
     "-unchecked",
     "-Xfatal-warnings",
     "-Ywarn-dead-code",
-    "-Ywarn-nullary-unit",
     "-Ywarn-numeric-widen",
     "-Ywarn-unused:implicits",
     "-Ywarn-unused:imports",
@@ -73,6 +72,14 @@ lazy val rexInterpreter = project
   .in(file("./rex-interpreter"))
   .settings(
     name := "rex-interpreter"
+  )
+  .settings(sharedSettings)
+  .settings(testSettings)
+
+lazy val rexRuntime = project
+  .in(file("./rex-runtime"))
+  .settings(
+    name := "rex-runtime"
   )
   .settings(sharedSettings)
   .settings(testSettings)
