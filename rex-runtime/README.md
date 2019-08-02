@@ -1,6 +1,3 @@
 # rex-runtime
 
-This module defines a program that is capable of parsing and interpreting a JavaScript program.
-
-Features (TODO):
-- JIT compiler that dynamically compiles JavaScript to Java bytecode at runtime
+This module defines library runtime types that must be included on the classpath when executing a compiled JavaScript program on the JVM.
