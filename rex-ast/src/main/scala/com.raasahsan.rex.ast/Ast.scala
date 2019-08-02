@@ -2,7 +2,7 @@ package com.raasahsan.rex.ast
 
 final case class Program(block: Block)
 
-final case class Block(statements: Statement)
+final case class Block(statements: List[Statement])
 
 sealed abstract class Statement
 
